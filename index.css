@@ -87,7 +87,7 @@ header nav ul li{
    display: inline-block;
    padding: 0 40px;
 }
-.btn-contato button:hover{
+.btn-contato button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px blueviolet;
     transform: scale(1.05);
 }
@@ -335,3 +335,59 @@ div.social-icons{
  .overlay:hover{
     opacity: 1;
  }
+
+ /*ESTILO DO FORMULARIO CONTATO*/
+ section.formulario{
+    padding: 80px 4%;
+ }
+
+ form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 40px;
+ }
+
+ form input, form textarea{
+    width: 100%;
+    background-color: #0000002d;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+ }
+
+ form input::placeholder{
+    color: #fff;
+ }
+ 
+ form textarea{
+    resize: none;
+    max-height: 200px;
+    max-width: 500px;
+ }
+
+ form textarea::placeholder{
+    color: #fff;
+
+ }
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #7a38ac;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+
